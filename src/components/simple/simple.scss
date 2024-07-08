@@ -29,3 +29,18 @@
     }
   }
 }
+@media #{$mobile-only-two} {
+  .simple {
+    .simple-wrap {
+      display: flex;
+      gap: 1rem;
+      justify-content: space-between;
+      flex-direction: column;
+      .simple__block {
+        width: 100%;
+        padding: 15px 20px;
+
+      }
+    }
+  }
+}
