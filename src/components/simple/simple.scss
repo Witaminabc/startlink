@@ -1,0 +1,31 @@
+.simple{
+  @include container();
+  @include margin-vertical-30();
+  .simple-wrap{
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    .simple__block{
+      width: calc((100% / 3) - 2rem);
+      box-shadow: 4px 4px 15px 0px #00000026;
+      border: 1px solid #303030;
+      border-radius: 6px;
+      padding: 30px 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      gap: 1rem;
+      .simple__block-title{
+        font-family: Raleway;
+        font-size: 50px;
+        font-weight: 600;
+        line-height: 58.7px;
+        text-align: center;
+        color: #30B5FF;
+      }
+
+    }
+  }
+}

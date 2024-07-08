@@ -1,0 +1,44 @@
+.advantage{
+  background-color: #F6F8FB;
+  h2{
+    @include container();
+  }
+  .advantage-wrap{
+    @include container();
+    @include margin-vertical-30();
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .advantage__block{
+    display: flex;
+    gap: 1rem;
+    width: calc(50% - 1rem);
+    box-shadow: 4px 4px 15px 0px #00000026;
+    border-radius: 6px;
+    padding:40px  20px;
+    p:nth-child(1){
+      color: #30B5FF;
+    }
+  }
+}
+@media  #{$mobile-only-two}{
+  .advantage {
+    .advantage-wrap {
+    gap:1rem;
+    }
+      .advantage__block {
+      width: 100%;
+        padding: 10px;
+        gap: 0.1rem;
+        .advantage__block-img{
+        align-self: end;
+        //width: 25%;
+
+        img{
+          width: 100px;
+        }
+      }
+    }
+    }
+  }
