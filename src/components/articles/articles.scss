@@ -1,0 +1,22 @@
+
+.articles-wrap{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  .articles__block{
+    width: calc((100% /3) - 1rem);
+    border-radius: 6px;
+    border: 1px solid #303030;
+    img{
+      width: 100%;
+      border-radius: 6px;
+    }
+
+  }
+  .articles__block:first-child{
+    width: calc(((100% /3) * 2 ) - 1rem);
+    img{
+      width: 100%;
+    }
+  }
+}

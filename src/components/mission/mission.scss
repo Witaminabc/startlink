@@ -1,9 +1,11 @@
-.mission{
+.mission {
   position: relative;
-  img{
+
+  img {
     width: 100%;
   }
-  .mission-block{
+
+  .mission-block {
     position: absolute;
     top: 60px;
     right: 130px;
@@ -12,13 +14,15 @@
     justify-content: space-between;
     width: 410px;
     height: 238px;
-    .mission-block-title{
+
+    .mission-block-title {
       font-family: Raleway;
       font-size: 40px;
       font-weight: 600;
       line-height: 50px;
       text-align: left;
-      span{
+
+      span {
         font-family: Raleway;
         font-size: 40px;
         font-weight: 600;
@@ -27,7 +31,8 @@
         color: #30B5FF;
       }
     }
-    .mission-block-text{
+
+    .mission-block-text {
       font-family: Raleway;
       font-size: 16px;
       font-weight: 400;
@@ -35,7 +40,8 @@
       text-align: left;
       padding-bottom: 30px;
     }
-    .btn_blue{
+
+    .btn_blue {
       display: flex;
       width: 262px;
       height: 50px;
@@ -45,9 +51,24 @@
       border: 1px solid #30B5FF;
       color: #30B5FF;
     }
+  }
+}
 
+@media #{$mobile-only-two} {
+  .mission {
+    .mission-block {
+      position: static;
+      width: 100%;
+      justify-content: space-around;
+      align-items: center;
 
+      .mission-block-title {
+        text-align: center;
+      }
+    }
 
-
+    img {
+      display: none;
+    }
   }
 }

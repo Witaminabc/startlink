@@ -1,3 +1,47 @@
+
+.btn_blu {
+  height: 50px;
+  display: inline-block;
+  color: white;
+  background-color: #30B5FF;
+  border-radius: 6px;
+  border: 1px solid #30B5FF;
+  span {
+    height: 50px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.78px;
+
+  }
+}
+.btn_blu-light {
+  height: 50px;
+  display: inline-block;
+  //padding: 15px 70px;
+  color: #30B5FF;
+  background-color:white ;
+  border-radius: 6px;
+  border: 1px solid #30B5FF;
+  span {
+    height: 50px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.78px;
+
+  }
+}
 body {
   //font-size: $font-primary-size;
   font-size: 16px;
@@ -7,7 +51,10 @@ body {
   line-height: 20px;
 
   //color: $color-text-main;
-  background-color: $color-white;
+  //background-color: $color-white;
+  background-color:  #F6F8FB;
+
+
   //min-width: 320px;
   color:#1C1230;
   display: flex;

@@ -6,8 +6,23 @@ import $ from 'jquery';
 import jQuery from 'jquery';
 
 // $('.swiper').css('display','none')
-
-const swiper = new Swiper('.swipergood', {
+const swiper = new Swiper(".mySwiper", {
+    spaceBetween: 10,
+    slidesPerView: 3,
+    freeMode: true,
+    watchSlidesProgress: true,
+});
+const swiper2 = new Swiper(".mySwiper2", {
+    spaceBetween: 10,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    thumbs: {
+        swiper: swiper,
+    },
+});
+const swiper3 = new Swiper('.swipergood', {
     // modules: [Navigation, Pagination, Scrollbar],
     loop: true,
     slidesPerView: 1,
