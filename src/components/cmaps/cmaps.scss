@@ -1,0 +1,55 @@
+.cmaps{
+  @include container();
+  @include padding-vertical-30();
+  .cmaps-wrap{
+    .cmaps__blocks{
+      display: flex;
+      gap: 2rem;
+      .cmaps__block{
+        width: calc((100% / 3) - 1rem) ;
+        padding:30px 40px;
+        box-shadow: 4px 4px 15px 0px #00000026;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        .cmaps__block-blue{
+          color: #30B5FF;
+          font-family: Montserrat;
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 24px;
+          text-align: left;
+
+        }
+        .cmaps__block-title{
+          padding-top: 10px;
+          color: #30B5FF;
+          font-family: Montserrat;
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 24px;
+          text-align: left;
+
+        }
+      }
+    }
+  }
+}
+@media  #{$mobile-only-two}{
+  .cmaps {
+    @include container();
+
+    .cmaps-wrap {
+      .cmaps__blocks {
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+
+        .cmaps__block {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+}
